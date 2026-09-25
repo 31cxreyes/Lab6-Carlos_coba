@@ -1,1 +1,1 @@
-// TODO: (opcional) tu JavaScript. Basta con una instrucción.
+console.log("Festival de música - Lab 6 cargado correctamente");
