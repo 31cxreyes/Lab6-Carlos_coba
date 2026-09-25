@@ -1,2 +1,203 @@
-<!-- TODO: construye aquí tu página (Lab #6) -->
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival de música</title>
+  <meta name="description" content="Festival de música en vivo con artistas locales e internacionales. Evento gratuito en el Parque Central.">
+  <meta name="author" content="Carlos Coba">
+  <meta name="codigo-sesion" content="LAB-V9S3">
+  
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/estilos.css">
+  
+  <!-- CSS interno (mínimo 1 regla) -->
+  <style>
+    /* una regla cualquiera */
+    body { margin: 0; }
+  </style>
+  
+  <script src="js/app.js" defer></script>
+</head>
+<body class="lab6-ia-8842">
+  <!-- verificado-por-ia -->
+
+  <header>
+    <img src="img/Logo.jpg" alt="Logo del festival">
+  </header>
+  <nav>
+        <a href="#info">Información</a>
+        <a href="#detalles">Detalles</a>
+        <a href="#artistas">Artistas</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+  <main id="ficha-1741" class="k-c7d4f2">
+    <h1 style="text-align: center; letter-spacing: 1px;">Festival de música</h1>
+    <section id="info">
+      <h2>Información del evento</h2>
+      <p>Ven a disfrutar de la <strong>música en vivo</strong> con artistas <em>locales e internacionales</em>. 
+El evento se realiza el <time datetime="2024-07-15">15 de julio de 2024</time>. 
+Usa el código <code>FEST24</code> y consulta la <abbr title="Organización Mundial de la Música">OMM</abbr>. 
+No olvides <mark>llegar temprano</mark> y seguir las <small>normas de seguridad</small>.</p>
+    </section>
+    <section id="detalles">
+      <h2>Detalles del evento</h2>
+      <ul>
+        <li>Fecha: 15 de julio de 2024</li>
+        <li>Hora: 18:00 - 23:00</li>
+        <li>Lugar: Parque Central</li>
+        <li>Entrada: Gratuita</li>
+      </ul>
+    </section>
+    <section id="artistas">
+      <h2>Artistas invitados</h2>
+      <ol>
+        <li>Artista A</li>
+          <article>
+            <h3>Kidd Keo</h3>
+            <p>Cantante español de trap conocido por mezclar el inglés y el castellano en sus canciones.</p>
+          </article>
+        <li>Artista B</li>
+          <article>
+            <h3>Lit Killah</h3>
+            <p>Es un rapero español conocido por su estilo agresivo y letras críticas.</p>
+          </article>
+        <li>Artista C</li>
+          <article> 
+            <h3>C.R.O</h3>
+            <p>Es un músico español conocido por su estilo único y letras introspectivas.</p>
+          </article>
+      </ol>
+    </section>
+    <aside id="contacto">
+      <h2>Información adicional</h2>
+      <p>Recuerda traer tu identificación y seguir las normas de seguridad del evento.</p>
+    </aside>
+    <details>
+      <summary>Preguntas frecuentes</summary>
+      <p>¿Se permite el ingreso de alimentos y bebidas? No, está prohibido.</p>
+      <p>¿Habrá estacionamiento disponible? Sí, hay estacionamiento gratuito cerca del parque.</p>
+    </details>
+
+    <dl>
+      <dt>Contacto</dt>
+      <dd>Email: info@festivalmusica.com</dd>
+    </dl>
+    
+    <figure>
+      <img src="img/festival.jpg" alt="Imagen del festival de música" loading="lazy">
+      <figcaption>Festival de música en vivo</figcaption>
+    </figure>
+    <video controls width="400">
+  <source src="img/promo.mp4" type="video/mp4">
+  Tu navegador no soporta video.
+</video>
+
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video promocional del festival" width="400" height="225" loading="lazy"></iframe>
+  </main>
+  <section id="registro">
+  <h2>Registro al festival</h2>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Datos del asistente</legend>
+
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" maxlength="50" autocomplete="name">
+
+      <label for="email">Correo</label>
+      <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+
+      <label for="tel">Teléfono</label>
+      <input type="tel" id="tel" name="tel" pattern="[0-9]{10,}" placeholder="04141234567">
+
+      <label for="edad">Edad</label>
+      <input type="number" id="edad" name="edad" min="16" max="99" step="1">
+
+      <label for="fecha">Fecha de preferencia</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="clave">Contraseña de acceso</label>
+      <input type="password" id="clave" name="clave" minlength="6" required>
+
+      <label for="color">Color de pulsera</label>
+      <input type="color" id="color" name="color" value="#207097">
+
+      <label for="rango">Nivel de interés (1-10)</label>
+      <input type="range" id="rango" name="rango" min="1" max="10" value="5">
+
+      <p>Tipo de entrada:</p>
+      <label for="general">General</label>
+      <input type="radio" id="general" name="entrada" value="general" checked>
+      <label for="vip">VIP</label>
+      <input type="radio" id="vip" name="entrada" value="vip">
+
+      <label for="noticias">
+        <input type="checkbox" id="noticias" name="noticias" value="si"> Quiero recibir noticias
+      </label>
+
+      <label for="zona">Zona preferida</label>
+      <select id="zona" name="zona">
+        <option value="frente">Frente al escenario</option>
+        <option value="centro">Centro</option>
+        <option value="atras">Atrás</option>
+      </select>
+
+      <label for="comentarios">Comentarios</label>
+      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí..."></textarea>
+
+      <label for="busqueda">Buscar artista</label>
+      <input list="artistas-lista" id="busqueda" name="busqueda">
+      <datalist id="artistas-lista">
+        <option value="Artista A">
+        <option value="Artista B">
+        <option value="Artista C">
+      </datalist>
+
+      <button type="submit">Enviar registro</button>
+    </fieldset>
+  </form>
+</section>
+  <table>
+  <caption>Horarios y escenarios del Festival de música</caption>
+  <thead>
+    <tr>
+      <th scope="col">Escenario</th>
+      <th scope="col">Artista</th>
+      <th scope="col">Hora</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Principal</td>
+      <td>Artista A</td>
+      <td>18:00</td>
+    </tr>
+    <tr>
+      <td>Secundario</td>
+      <td>Artista B</td>
+      <td>19:30</td>
+    </tr>
+    <tr>
+      <td>Principal</td>
+      <td>Artista C</td>
+      <td>21:00</td>
+    </tr>
+    <tr>
+      <td>Cierre</td>
+      <td>Todos</td>
+      <td>22:30</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">Total: 4 presentaciones programadas</td>
+    </tr>
+  </tfoot>
+</table>
+  <footer>Carlos Coba</footer>
+
+  <noscript>
+    <p>Activa JavaScript para ver todas las funciones de esta página.</p>
+  </noscript>
+</body>
+</html>
